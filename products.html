@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arizona Printshop - Your Online Printing Destination</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="carousel.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo"><img src="arizona.png" alt="Cards Category"></a>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="products.html" class="nav-link">Products</a>
+                    <a href="cart.html" class="nav-link">
+                        Cart <span class="cart-badge" id="cartBadge">0</span>
+                    </a>
+                    <a href="order-history.html" class="nav-link" id="ordersLink" style="display:none;">Orders</a>
+                    <button class="nav-link btn-login" id="authBtn">Login</button>
+                    <button class="nav-link btn-admin" id="adminBtn" style="display:none;">Admin</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+       <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content fadeIn">
+            <h1>Welcome to Printofy</h1>
+            <p>Your One-Stop DTF Transfer Destination</p>
+            <a href="products.html" class="btn btn-primary">Start Shopping</a>
+        </div>
+    </section>
+
+    <!-- Image Carousel Section -->
+    <section class="carousel-section">
+        <div class="carousel-container">
+            <div class="carousel-track" id="carouselTrack">
+                <!-- Slide 1: Sweatpants -->
+                <div class="carousel-slide slide-1">
+                    <img src="https://images.unsplash.com/photo-1506629082632-33d8b3dd2629?w=1200&h=600&fit=crop" alt="Sweatpants" class="slide-image">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <div class="content-wrapper">
+                            <h2 class="slide-title">Sweatpants</h2>
+                            <p class="slide-description">DTF Transfer Sweatpants</p>
+                            <a href="products.html" class="btn btn-primary">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Headwear -->
+                <div class="carousel-slide slide-2">
+                    <img src="https://images.unsplash.com/photo-1588554843414-e4fb1d56d5b6?w=1200&h=600&fit=crop" alt="Headwear" class="slide-image">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <div class="content-wrapper">
+                            <h2 class="slide-title">Headwear</h2>
+                            <p class="slide-description">DTF Transfer Headwear</p>
+                            <a href="products.html" class="btn btn-primary">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3: Tote Bag -->
+                <div class="carousel-slide slide-3">
+                    <img src="https://images.unsplash.com/photo-1590736969955-71cc94901144?w=1200&h=600&fit=crop" alt="Tote Bags" class="slide-image">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <div class="content-wrapper">
+                            <h2 class="slide-title">Tote Bags</h2>
+                            <p class="slide-description">DTF Transfer Tote Bags</p>
+                            <a href="products.html" class="btn btn-primary">Browse</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4: Uniform -->
+                <div class="carousel-slide slide-4">
+                    <img src="https://images.unsplash.com/photo-1519819972915-fe46d652af89?w=1200&h=600&fit=crop" alt="Uniforms" class="slide-image">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <div class="content-wrapper">
+                            <h2 class="slide-title">Uniforms</h2>
+                            <p class="slide-description">DTF Transfer Uniforms</p>
+                            <a href="products.html" class="btn btn-primary">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 5: Jerseys -->
+                <div class="carousel-slide slide-5">
+                    <img src="https://images.unsplash.com/photo-1578365746663-1a7017e5ec20?w=1200&h=600&fit=crop" alt="Jerseys" class="slide-image">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <div class="content-wrapper">
+                            <h2 class="slide-title">Jerseys</h2>
+                            <p class="slide-description">DTF Transfer Jerseys</p>
+                            <a href="products.html" class="btn btn-primary">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 6: Sweatshirts -->
+                <div class="carousel-slide slide-6">
+                    <img src="https://images.unsplash.com/photo-1556821552-ec2ea14bab89?w=1200&h=600&fit=crop" alt="Sweatshirts" class="slide-image">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <div class="content-wrapper">
+                            <h2 class="slide-title">Sweatshirts</h2>
+                            <p class="slide-description">DTF Transfer Sweatshirts</p>
+                            <a href="products.html" class="btn btn-primary">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 7: Hoodies -->
+                <div class="carousel-slide slide-7">
+                    <img src="https://images.unsplash.com/photo-1556821552-7e35f2cfeb3e?w=1200&h=600&fit=crop" alt="Hoodies" class="slide-image">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <div class="content-wrapper">
+                            <h2 class="slide-title">Hoodies</h2>
+                            <p class="slide-description">DTF Transfer Hoodies</p>
+                            <a href="products.html" class="btn btn-primary">Browse</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 8: T-Shirts -->
+                <div class="carousel-slide slide-8">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=1200&h=600&fit=crop" alt="T-Shirts" class="slide-image">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <div class="content-wrapper">
+                            <h2 class="slide-title">T-Shirts</h2>
+                            <p class="slide-description">DTF Transfer T-Shirts</p>
+                            <a href="products.html" class="btn btn-primary">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-btn prev" id="prevBtn" aria-label="Previous slide">❮</button>
+            <button class="carousel-btn next" id="nextBtn" aria-label="Next slide">❯</button>
+
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators" id="indicators">
+                <button class="indicator active" data-slide="0" aria-label="Go to slide 1"></button>
+                <button class="indicator" data-slide="1" aria-label="Go to slide 2"></button>
+                <button class="indicator" data-slide="2" aria-label="Go to slide 3"></button>
+                <button class="indicator" data-slide="3" aria-label="Go to slide 4"></button>
+                <button class="indicator" data-slide="4" aria-label="Go to slide 5"></button>
+                <button class="indicator" data-slide="5" aria-label="Go to slide 6"></button>
+                <button class="indicator" data-slide="6" aria-label="Go to slide 7"></button>
+                <button class="indicator" data-slide="7" aria-label="Go to slide 8"></button>
+            </div>
+
+            <!-- Slide Counter -->
+            <div class="slide-counter">
+                <span id="currentSlide">1</span> / <span id="totalSlides">8</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title slideInLeft">Featured Products</h2>
+            <div class="products-grid" id="featuredProducts">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+       <div class="container">
+            <h2 class="section-title slideInRight">Shop by Category</h2>
+            <div class="categories-grid" id="categoriesGrid">
+                <div class="category-card bounce">
+                    <div class="category-icon"></div>
+                    <img src="apparel.png" alt="Apparel Category">
+                    <h3>Apparel</h3>
+                </div>
+                <div class="category-card bounce">
+                    <div class="category-icon"></div>
+                    <img src="banners.png" alt="Banners Category">
+                    <h3>Banners</h3>
+                </div>
+                <div class="category-card bounce">
+                    <div class="category-icon"></div>
+                    <img src="cards.png" alt="Cards Category">
+                    <h3>Cards</h3>
+                </div>
+                <div class="category-card bounce">
+                    <div class="category-icon"></div>
+                    <img src="posters.png" alt="Posters Category">
+                    <h3>Posters</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us">
+        <div class="container">
+            <h2 class="section-title">Why Choose Arizona PrintShop?</h2>
+            <div class="features-grid">
+                <div class="feature-card float">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Fast Shipping</h3>
+                    <p>Quick delivery to your doorstep</p>
+                </div>
+                <div class="feature-card float">
+                    <div class="feature-icon">💳</div>
+                    <h3>Secure Payments</h3>
+                    <p>Safe and secure payment methods</p>
+                </div>
+                <div class="feature-card float">
+                    <div class="feature-icon">⭐</div>
+                    <h3>Quality Products</h3>
+                    <p>Only the best products available</p>
+                </div>
+                <div class="feature-card float">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Easy Returns</h3>
+                    <p>Hassle-free return policy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Printofy is your trusted DTF transfer platform with a wide range of products.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: albertejisker@gmail.com</p>
+                    <p>Phone: +1-800-ECOM-HUB</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Arizona PrintShop All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal" id="authModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="auth-container" id="authContainer">
+                <!-- Auth content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="storage.js"></script>
+    <script src="products.js"></script>
+    <script src="auth.js"></script>
+    <script src="cart.js"></script>
+    <script src="carousel.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
